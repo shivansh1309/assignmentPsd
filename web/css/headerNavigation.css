@@ -1,0 +1,22 @@
+.headerNavigation{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.language {
+    display: inline-block;
+}
+.userInfo {
+    display: inline-block;
+    float: right;
+}
+.login {
+    display: inline-block;
+}
+.cart{
+    display: inline-block;
+}
+.signIn , .signUp {
+    color:black;
+    text-decoration: none;
+}
