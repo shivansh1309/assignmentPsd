@@ -23,5 +23,18 @@
                             </container>
                         </container>
                     </referenceContainer>
+                    <referenceBlock name = "logo" remove = "true" />
+                    <referenceBlock name = "minicart" remove = "true" />
+                    <referenceBlock name = "top.search" remove = "true" />
+                    <referenceContainer name = "header-wrapper">
+                        <container name = "headerMenu" label="headerMenu" htmlTag="div" htmlClass="headerMenu">
+                            <container name = "store" label = "store" htmlTag="div" htmlClass="store">
+                                <block class = "Magento\Framework\View\Element\Template" name = "store_Name" template = "Magento_Theme::store_Name.phtml" />
+                            </container>
+                            <container name = "categories" label = "categories" htmlTag = "div" htmlClass="categories">
+                                <block class = "Magento\Framework\View\Element\Template" name = "store_Categories" template = "Magento_Theme::store_Categories.phtml" />
+                            </container>
+                        </container>
+                    </referenceContainer>
     </body>
 </page>

@@ -1,0 +1,26 @@
+.headerMenu{
+    margin-left: 0px;
+    padding: 0;
+}
+.store{
+    display: inline-block;
+    font-size: 50px;
+    margin-left: 270px;
+}
+.categories{
+
+    display: inline-block;
+}
+.categories_list{
+    list-style: none;
+}
+li{
+    display:inline;
+    padding: 20px;
+    font-size: 20px;
+}
+
+li img {
+    width:20px;
+    height: 20px;
+}
