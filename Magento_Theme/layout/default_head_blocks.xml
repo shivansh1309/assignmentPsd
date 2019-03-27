@@ -8,10 +8,8 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
         <css src = "css/slider_Image.css" />
-        <css src="css/owl.carousel.css" />
+        <css src="js/OwlCarousel/owl.carousel.css" />
         <link src = "js/jquery.js" />
         <link src = "js/slider.js" />
-        <link src = "js/requirejs-config.js" />
-        <link src = "js/owl.carousel.js" />
     </head>
 </page>
