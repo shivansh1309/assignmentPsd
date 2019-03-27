@@ -1,3 +1,36 @@
+
+.my_header{
+    margin-top: -30px;
+    margin-left:-22px;
+    margin-right:-22px;
+}
+.headerNavigation{
+    display:block;
+}
+.language{
+    display:inline-block;
+}
+.userInfo {
+    display: inline;
+    float:right;
+    margin-top:-30px
+}
+#userLogo {
+    width:20px;
+    height:20px;
+}
+.login {
+    display: inline;
+    margin-right:10px;
+}
+.cart{
+    display: inline;
+}
+.signIn , .signUp {
+    color:black;
+    text-decoration: none;
+    z-index: 2;
+}
 .headerMenu{
     margin-left: 0px;
     padding: 0;
@@ -8,15 +41,12 @@
     display: inline-block;
     font-size: 50px;
     margin-left: 270px;
-    margin-top: 20px;
-    z-index: 2;
 }
 .categories{
  display:inline-block;
  float: right;
  margin-right: 280px;
- margin-top:45px;
- z-index: 2;
+ margin-top:34px;
 }
 .categories_list{
     list-style: none;
@@ -40,8 +70,13 @@ li img {
     z-index: 2;
 }
 
+
 .search:hover #form{
     visibility: visible;
     z-index: 2;
 }
-
+.slide{
+    margin-top: -270px;
+    margin-left: -22px;
+    margin-right: -22px;
+}

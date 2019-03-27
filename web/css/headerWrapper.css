@@ -1,3 +1,36 @@
+#slider_Image {
+    width:100%;
+    height:auto;
+    z-index: 1;
+}
+.language{
+    display:inline-block;
+    z-index: 2;
+}
+.userInfo {
+    display: inline-block;
+    float: right;
+    z-index: 2;
+}
+#userLogo {
+    width:20px;
+    height:20px;
+    z-index: 2;
+}
+.login {
+    display: inline-block;
+    margin-right:10px;
+    z-index: 2;
+}
+.cart{
+    display: inline-block;
+    z-index: 2;
+}
+.signIn , .signUp {
+    color:black;
+    text-decoration: none;
+    z-index: 2;
+}
 .headerMenu{
     margin-left: 0px;
     padding: 0;

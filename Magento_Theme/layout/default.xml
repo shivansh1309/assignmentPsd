@@ -7,34 +7,39 @@
 -->
 <page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
+        <move element="store.settings.language" destination="language" />
+        <move element="minicart" destination="cart" />
         <referenceContainer name = "header.panel" remove = "true" />
-                    <referenceContainer name = "header.panel.wrapper">
-                        <container name="headerNavigation" label="headerNavigation" htmlTag="div" htmlClass="headerNavigation">
-                            <container name = "language" label = "language" htmlTag = "div" htmlClass="language">
-                                <block class = "Magento\Framework\View\Element\Template" name = "languageSelect" template = "Magento_Theme::languageSelect.phtml" />
-                            </container>
-                            <container name = "userInfo" label = "userInfo" htmlTag="div" htmlClass="userInfo">
-                                <container name = "login" label = "login" htmlTag="div" htmlClass="login">
-                                <block class = "Magento\Framework\View\Element\Template" name = "userLogin" template = "Magento_Theme::userLogin.phtml" />
-                                </container>
-                                <container name = "cart" label = "cart" htmlTag="div" htmlClass="cart">
-                                <block class = "Magento\Framework\View\Element\Template" name = "cartItems" template = "Magento_Theme::cartItems.phtml" />
-                                </container>
-                            </container>
+        <referenceBlock name = "logo" remove = "true" />
+        <referenceBlock name = "top.search" remove = "true" />
+        <referenceBlock name = "cms_page" remove = "true" />
+        <referenceContainer name = "header-wrapper">
+            <container name = "my_header" label="my_header" htmlTag="div" htmlClass="my_header">
+                <container name="headerNavigation" label="headerNavigation" htmlTag="div" htmlClass="headerNavigation">
+                    <container name = "language" label = "language" htmlTag = "div" htmlClass="language" />
+                    <container name = "userInfo" label = "userInfo" htmlTag="div" htmlClass="userInfo">
+                        <container name = "login" label = "login" htmlTag="div" htmlClass="login">
+                            <block class = "Magento\Framework\View\Element\Template" name = "userLogin" template = "Magento_Theme::userLogin.phtml" />
                         </container>
-                    </referenceContainer>
-                    <referenceBlock name = "logo" remove = "true" />
-                    <referenceBlock name = "minicart" remove = "true" />
-                    <referenceBlock name = "top.search" remove = "true" />
-                    <referenceContainer name = "header-wrapper">
-                        <container name = "headerMenu" label="headerMenu" htmlTag="div" htmlClass="headerMenu">
-                            <container name = "store" label = "store" htmlTag="div" htmlClass="store">
-                                <block class = "Magento\Framework\View\Element\Template" name = "store_Name" template = "Magento_Theme::store_Name.phtml" />
-                            </container>
-                            <container name = "categories" label = "categories" htmlTag = "div" htmlClass="categories">
-                                <block class = "Magento\Framework\View\Element\Template" name = "store_Categories" template = "Magento_Theme::store_Categories.phtml" />
-                            </container>
-                        </container>
-                    </referenceContainer>
-    </body>
-</page>
+                        <container name = "cart" label = "cart" htmlTag="div" htmlClass="cart" />
+                    </container>
+                </container>
+                <container name = "headerMenu" label="headerMenu" htmlTag="div" htmlClass="headerMenu">
+                    <container name = "store" label = "store" htmlTag="div" htmlClass="store">
+                        <block class = "Magento\Framework\View\Element\Template" name = "store_Name" template = "Magento_Theme::store_Name.phtml" />
+                    </container>
+                    <container name = "categories" label = "categories" htmlTag = "div" htmlClass="categories">
+                        <block class = "Magento\Framework\View\Element\Template" name = "store_Categories" template = "Magento_Theme::store_Categories.phtml" />
+                    </container>
+                </container>
+            </container>
+        </referenceContainer>
+        <container name = "mainContent" label = "mainContent" htmlTag="div" htmlClass="mainContent" after="header-wrapper">
+            <referenceContainer name = "content.top">
+                <container name = "sliderImage" label="sliderImage" htmlTag="div" htmlClass="sliderImage">
+                    <block class = "Magento\Framework\View\Element\Template" name = "slider_Image" template="Magento_Theme::slider_Image.phtml" />
+                </container>
+            </referenceContainer>
+        </container>
+        </body>
+    </page>
