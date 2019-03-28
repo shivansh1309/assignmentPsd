@@ -1,0 +1,165 @@
+
+.my_header{
+    margin-top: -30px;
+    margin-left:-22px;
+    margin-right:-22px;
+}
+.headerNavigation{
+    display:block;
+}
+.language{
+    display:inline-block;
+}
+.userInfo {
+    display: inline;
+    float:right;
+    margin-top:-30px
+}
+#userLogo {
+    width:20px;
+    height:20px;
+}
+.login {
+    display: inline;
+    margin-right:10px;
+}
+.cart{
+    display: inline;
+}
+.signIn , .signUp {
+    color:black;
+    text-decoration: none;
+    z-index: 2;
+}
+.headerMenu{
+    margin-left: 0px;
+    padding: 0;
+    display:inline-block;
+    z-index: 2;
+}
+.store{
+    display: inline-block;
+    font-size: 50px;
+    margin-left: 270px;
+}
+.categories{
+ display:inline-block;
+ float: right;
+ margin-right: 280px;
+ margin-top:34px;
+}
+.categories_list{
+    list-style: none;
+    z-index: 2;
+}
+li{
+    display:inline;
+    padding: 20px;
+    font-size: 20px;
+    z-index: 2;
+}
+
+li img {
+    width:20px;
+    height: 20px;
+    z-index: 2;
+}
+
+#form {
+    visibility: hidden;;
+    z-index: 2;
+}
+
+
+.search:hover #form{
+    visibility: visible;
+    z-index: 2;
+}
+.slide{
+    margin-top: -270px;
+    margin-left: -22px;
+    margin-right: -22px;
+}
+.feature1{
+    display: inline-block;
+    padding-left: 100px;
+    padding-right:330px;
+}
+.feature2{
+    display: inline-block;
+    padding-right:400px;
+}
+.feature3{
+    display: inline-block;
+}
+.shoeCatalog{
+    display:inline-block;
+    width:638px;
+    position:absolute;
+}
+
+.bagCatalog{
+    display: inline-block;
+    width:646px;
+    float: right;
+}
+.bag{
+    margin-top:-525px;
+}
+#bag_image{
+    width:714px;
+    height:520px;
+}
+.womenFirst{
+    display: inline-block;
+}
+.women_Image{
+    display:inline-block;
+    margin-top:-5px;
+    width:650px;
+}
+.womenSecond{
+    display:inline-block;
+    padding-left:50px;
+}
+.wsecondLabel1{
+    display:inline-block;
+    position: relative;
+}
+#label {
+    position: absolute;
+    width:200px;
+    top:-550px;
+}
+#loremipsum{
+    display:block;
+}
+.wsecondSlider{
+
+    display:inline-block;
+}
+#slider{
+    display: inline-block;
+    position: absolute;
+    top: 2000px;
+}
+#naivigation{
+    display: inline-block;
+    margin-left: 265px;
+}
+#image4{
+    margin-left:260px;
+    margin-top:-327px;
+}
+#nav3{
+    display: inline-block;
+}
+#nav4{
+    display:inline-block;
+}
+#button3{
+    display: inline-block;
+}
+#button4{
+    display:inline-block;
+}
