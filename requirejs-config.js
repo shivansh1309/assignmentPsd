@@ -1,7 +1,7 @@
 var config = {
     map: {
         '*': {
-            'cookiecode/jquery':        'js/jquery-3.3.1',
+            'cookiecode/jquery':        'js/jquery',
             'owlcarousel':              'js/owl-carousel/owlcarousel'
         }
     }
