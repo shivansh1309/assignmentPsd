@@ -41,5 +41,55 @@
                 </container>
             </referenceContainer>
         </container>
+        <referenceContainer name="content">
+            <container name ="features" label="features" htmlTag="div" htmlClass="features" after="sliderImage"> 
+                <container name="feature1" label="feature1" htmlTag="div" htmlClass="feature1">
+                    <block class="Magento\Framework\View\Element\Template" name="feature_1" template="Magento_Theme::feature1.phtml" />
+                </container>
+                <container name="feature2" label="feature1" htmlTag="div" htmlClass="feature2">
+                    <block class="Magento\Framework\View\Element\Template" name="feature_2" template="Magento_Theme::feature2.phtml" />
+                </container>
+                <container name="feature3" label="feature1" htmlTag="div" htmlClass="feature3">
+                    <block class="Magento\Framework\View\Element\Template" name="feature_3" template="Magento_Theme::feature3.phtml" />
+                </container>
+            </container>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <container name="firstCatalog" label="firstCatalog" htmlTag="div" htmlClass="firstcatalog" after="features">
+                <container name="shoeCatalog" label="shoecatalog" htmlTag="div" htmlClass="shoecatalog" >
+                    <block class="Magento\Framework\View\Element\Template" name="shoe_Catalog" template="Magento_Theme::shoe_Catalog.phtml" />
+                </container>
+                <container name="bagCatalog" label="bagcatalog" htmlTag="div" htmlClass="bagCatalog">
+                    <block class = "Magento\Framework\View\Element\Template" name="bag_catalog" template="Magento_Theme::bag_Catalog.phtml" />
+                </container>
+            </container>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <container name="womenCatalog" label="womenCatalog" htmlTag="div" htmlClass="womenCatalog" after="firstCatalog">
+                <container name="womenFirst" label="womenFirst" htmlTag="div" htmlClass="womenFirst">
+                    <block class="Magento\Framework\View\Element\Template" name="women_First" template="Magento_Theme::women_First.phtml" />
+                </container>
+                <container name="womenSecond" label="womenSecond" htmlTag="div" htmlClass="womenSecond">
+                    <container name="wsecondLabel1" label="wsecondLabel1" htmlTag="div" htmlClass="wsecondLabel1">
+                        <block class = "Magento\Framework\View\Element\Template" name="wsecond_Label1" template="Magento_Theme::wsecond_Label1.phtml" />
+                    </container>
+                    <container name="wsecondSlider" label="wsecondSlider" htmlTag="div" htmlClass="wsecondSlider">
+                        <block class = "Magento\Framework\View\Element\Template" name="wsecond_Slider" template="Magento_Theme::wsecond_Slider" />
+                    </container>
+                </container>
+            </container>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <container name="menCatalog" label="menCatalog" htmlTag="div" htmlClass="menCatalog" after="womenCatalog">
+                <container name="menFirst" label="menFirst" htmlTag="div" htmlClass="menFirst">
+                </container>
+                <container name="menSecond" label="menSecond" htmlTag="div" htmlClass="menSecond">
+                </container>
+            </container>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <container name="menSlide" label="menSlide" htmlTag="div" htmlClass="menSlide">
+            </container>
+        </referenceContainer>
         </body>
     </page>

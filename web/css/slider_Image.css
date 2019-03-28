@@ -80,3 +80,57 @@ li img {
     margin-left: -22px;
     margin-right: -22px;
 }
+.feature1{
+    display: inline-block;
+    padding-left: 100px;
+    padding-right:330px;
+}
+.feature2{
+    display: inline-block;
+    padding-right:400px;
+}
+.feature3{
+    display: inline-block;
+}
+.shoeCatalog{
+    display:inline-block;
+    width:638px;
+    position:absolute;
+}
+
+.bagCatalog{
+    display: inline-block;
+    width:646px;
+    float: right;
+}
+.bag{
+    margin-top:-525px;
+}
+#bag_image{
+    width:714px;
+    height:520px;
+}
+.womenFirst{
+    display: inline-block;
+}
+.women_Image{
+    display:inline-block;
+    margin-top:-5px;
+    width:650px;
+}
+.womenSecond{
+    display:inline-block;
+    padding-left:50px;
+}
+.wsecondLabel1{
+    display:inline-block;
+    position: relative;
+}
+#label {
+    position: absolute;
+    width:200px;
+    top:-600px;
+}
+#loremipsum{
+    display:block;
+}
