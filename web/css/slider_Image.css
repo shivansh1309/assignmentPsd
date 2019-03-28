@@ -129,8 +129,37 @@ li img {
 #label {
     position: absolute;
     width:200px;
-    top:-600px;
+    top:-550px;
 }
 #loremipsum{
     display:block;
+}
+.wsecondSlider{
+
+    display:inline-block;
+}
+#slider{
+    display: inline-block;
+    position: absolute;
+    top: 2000px;
+}
+#naivigation{
+    display: inline-block;
+    margin-left: 265px;
+}
+#image4{
+    margin-left:260px;
+    margin-top:-327px;
+}
+#nav3{
+    display: inline-block;
+}
+#nav4{
+    display:inline-block;
+}
+#button3{
+    display: inline-block;
+}
+#button4{
+    display:inline-block;
 }

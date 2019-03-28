@@ -9,10 +9,13 @@
     <body>
         <move element="store.settings.language" destination="language" />
         <move element="minicart" destination="cart" />
+        <move element="store.settings.currency" destination="currency" />
         <referenceContainer name = "header.panel" remove = "true" />
         <referenceBlock name = "logo" remove = "true" />
         <referenceBlock name = "top.search" remove = "true" />
         <referenceBlock name = "cms_page" remove = "true" />
+        <referenceContainer name="before.body.end" remove="true" />
+        <referenceContainer name="footer-container" remove="true" />
         <referenceContainer name = "header-wrapper">
             <container name = "my_header" label="my_header" htmlTag="div" htmlClass="my_header">
                 <container name="headerNavigation" label="headerNavigation" htmlTag="div" htmlClass="headerNavigation">
@@ -69,14 +72,6 @@
                 <container name="womenFirst" label="womenFirst" htmlTag="div" htmlClass="womenFirst">
                     <block class="Magento\Framework\View\Element\Template" name="women_First" template="Magento_Theme::women_First.phtml" />
                 </container>
-                <container name="womenSecond" label="womenSecond" htmlTag="div" htmlClass="womenSecond">
-                    <container name="wsecondLabel1" label="wsecondLabel1" htmlTag="div" htmlClass="wsecondLabel1">
-                        <block class = "Magento\Framework\View\Element\Template" name="wsecond_Label1" template="Magento_Theme::wsecond_Label1.phtml" />
-                    </container>
-                    <container name="wsecondSlider" label="wsecondSlider" htmlTag="div" htmlClass="wsecondSlider">
-                        <block class = "Magento\Framework\View\Element\Template" name="wsecond_Slider" template="Magento_Theme::wsecond_Slider" />
-                    </container>
-                </container>
             </container>
         </referenceContainer>
         <referenceContainer name="content">
@@ -89,6 +84,10 @@
         </referenceContainer>
         <referenceContainer name="content">
             <container name="menSlide" label="menSlide" htmlTag="div" htmlClass="menSlide">
+            </container>
+        </referenceContainer>
+        <referenceContainer name="page.bottom.container">
+            <container name = "currency" label = "currency" htmlTag="div" htmlClass="currency">
             </container>
         </referenceContainer>
         </body>

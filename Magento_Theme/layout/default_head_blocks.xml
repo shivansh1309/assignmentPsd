@@ -11,6 +11,6 @@
         <css src = "css/owl.carousel.css" />
         <link src = "js/jquery.js" />
         <link src = "js/owl.carousel.js" />
-        <link src = "js/sliderImage.js" />
+        <link src = "js/slider.js" />
     </head>
 </page>
