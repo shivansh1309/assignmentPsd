@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <move element="store.settings.language" destination="language" />
+        <move element="store.settings.currency" destination="currency" />
+        <move element="minicart" destination="cart" />
+        <referenceContainer name = "header.panel" remove = "true" />
+        <referenceBlock name = "logo" remove = "true" />
+        <referenceBlock name = "top.search" remove = "true" />
+        <referenceBlock name = "cms_page" remove = "true" />
+        <referenceBlock name="navigation.sections" remove="true" />
+        <referenceContainer name = "header-wrapper">
+            <container name = "my_header" label="my_header" htmlTag="div" htmlClass="my_header">
+                <container name="headerNavigation" label="headerNavigation" htmlTag="div" htmlClass="headerNavigation">
+                    <container name = "language" label = "language" htmlTag = "div" htmlClass="language" />
+                    <container name = "userInfo" label = "userInfo" htmlTag="div" htmlClass="userInfo">
+                        <container name = "login" label = "login" htmlTag="div" htmlClass="login">
+                            <block class = "Magento\Framework\View\Element\Template" name = "userLogin" template = "Magento_Theme::userLogin.phtml" />
+                        </container>
+                        <container name = "cart" label = "cart" htmlTag="div" htmlClass="cart" />
+                    </container>
+                </container>
+                 <container name = "headerMenu" label="headerMenu" htmlTag="div" htmlClass="headerMenu" after="headerNavigation">
+                    <container name = "store" label = "store" htmlTag="div" htmlClass="store">
+                        <block class = "Magento\Framework\View\Element\Template" name = "store_Name" template = "Magento_Theme::store_Name.phtml" />
+                    </container>
+                    <container name = "categories" label = "categories" htmlTag = "div" htmlClass="categories">
+                        <block class = "Magento\Framework\View\Element\Template" name = "store_Categories" template = "Magento_Theme::store_Categories.phtml" />
+                    </container>
+                </container>
+            </container>
+        </referenceContainer>
+        <container name = "slidingContent" label = "slidingContent" htmlTag="div" htmlClass="slidingContent" after="header-wrapper">
+            <referenceContainer name = "page.top">
+                <container name = "sliderImage" label="sliderImage" htmlTag="div" htmlClass="sliderImage">
+                    <block class = "Magento\Framework\View\Element\Template" name = "slider_Image" template="Magento_Theme::slider_Image.phtml" />
+                </container>
+            </referenceContainer>
+        </container>
+        <container name ="features" label="features" htmlTag="div" htmlClass="features" after="slidingImage">
+            <referenceContainer name="main"> 
+                <container name="feature1" label="feature1" htmlTag="div" htmlClass="feature1">
+                    <block class="Magento\Framework\View\Element\Template" name="feature_1" template="Magento_Theme::feature1.phtml" />
+                </container>
+                <container name="feature2" label="feature1" htmlTag="div" htmlClass="feature2">
+                    <block class="Magento\Framework\View\Element\Template" name="feature_2" template="Magento_Theme::feature2.phtml" />
+                </container>
+                <container name="feature3" label="feature1" htmlTag="div" htmlClass="feature3">
+                    <block class="Magento\Framework\View\Element\Template" name="feature_3" template="Magento_Theme::feature3.phtml" />
+                </container>
+            </referenceContainer>
+        </container>
+        <referenceContainer name="page.bottom.container">
+            <container name="firstCatalog" label="firstCatalog" htmlTag="div" htmlClass="firstcatalog" after="main">
+                <container name="shoeCatalog" label="shoecatalog" htmlTag="div" htmlClass="shoecatalog" >
+                    <block class="Magento\Framework\View\Element\Template" name="shoe_Catalog" template="Magento_Theme::shoe_Catalog.phtml" />
+                </container>
+                <container name="bagCatalog" label="bagcatalog" htmlTag="div" htmlClass="bagCatalog">
+                    <block class = "Magento\Framework\View\Element\Template" name="bag_catalog" template="Magento_Theme::bag_Catalog.phtml" />
+                </container>
+            </container>
+        </referenceContainer>
+        <referenceContainer name="page.bottom.container">
+            <container name="womenCatalog" label="womenCatalog" htmlTag="div" htmlClass="womenCatalog" after="firstCatalog">
+                <container name="womenFirst" label="womenFirst" htmlTag="div" htmlClass="womenFirst">
+                    <block class="Magento\Framework\View\Element\Template" name="women_First" template="Magento_Theme::women_First.phtml" />
+                </container>
+                <container name="womenSecond" label="womenSecond" htmlTag="div" htmlClass="womenSecond">
+                    <container name="wsecondLabel1" label="wsecondLabel1" htmlTag="div" htmlClass="wsecondLabel1">
+                        <block class = "Magento\Framework\View\Element\Template" name="wsecond_Label1" template="Magento_Theme::wsecond_Label1.phtml" />
+                    </container>
+                    <container name="wsecondSlider" label="wsecondSlider" htmlTag="div" htmlClass="wsecondSlider">
+                        <block class = "Magento\Framework\View\Element\Template" name="wsecond_Slider" template="Magento_Theme::wsecond_Slider.phtml" />
+                    </container>
+                </container>
+            </container>
+        </referenceContainer>
+    </body>
+</page>

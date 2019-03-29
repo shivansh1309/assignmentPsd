@@ -1,0 +1,161 @@
+
+.my_header{
+    display:inline;
+}
+.headerNavigation{
+    display:inline;
+}
+.language{
+    display:inline-block;
+}
+.userInfo {
+    display: inline-block;
+    float:right;
+}
+#userLogo {
+    width:15px;
+    height:15px;
+    display: inline;
+}
+.login {
+    display: inline-block;
+}
+.cart{
+    display: inline;
+}
+.headerMenu{
+    margin-left: 250px;
+    display:inline;
+}
+.store{
+    font-size: 60px;
+    margin-left: 250px;
+}
+.categories{
+ display:inline-block;
+ float: right;
+ margin-top: -40px;
+}
+.categories_list{
+    display: inline;
+    margin-right: 250px;
+}
+li{
+    display:inline;
+    padding: 20px;
+    font-size: 20px;
+}
+
+li img {
+    width:20px;
+    height: 20px;
+}
+
+#form {
+    visibility: hidden;;
+}
+
+
+.search:hover #form{
+    visibility: visible;
+}
+.sliderImage{
+    margin-top: -109px;
+    display: inline-block;
+}
+.backward{
+    margin-top:-450px;
+}
+.forward{
+    display: inline-block;
+    margin-left: -1305;
+    margin-top: -51;
+}
+.feature1{
+    display: inline-block;
+    margin-top: 350px;
+    margin-left: 180px;
+}
+.feature2{
+    display: inline-block;
+    margin-left: 150px;
+    margin-top: 350px;
+}
+.feature3{
+    display: inline-block;
+    margin-left: 150px;
+    margin-top: 350px;
+}
+.firstCatalog{
+    margin-top: -168px;
+}
+.shoeCatalog{
+    width:638px;
+    position:absolute;
+}
+
+.bagCatalog{
+    width:648px;
+    float: right;
+    margin-top: -125px;
+}
+.bag{
+    margin-top:-400px;
+}
+#bag_image{
+    width:714px;
+    height:520px;
+}
+/*.womenFirst{
+    display: inline-block;
+}
+.women_Image{
+    display:inline-block;
+    margin-top:-5px;
+    width:650px;
+}
+.womenSecond{
+    display:inline-block;
+    padding-left:50px;
+}
+.wsecondLabel1{
+    display:inline-block;
+    position: relative;
+}
+#label {
+    position: absolute;
+    width:200px;
+    top:-550px;
+}
+#loremipsum{
+    display:block;
+}
+.wsecondSlider{
+
+    display:inline-block;
+}
+#slider{
+    display: inline-block;
+    position: absolute;
+    top: 2000px;
+}
+#naivigation{
+    display: inline-block;
+    margin-left: 265px;
+}
+#image4{
+    margin-left:260px;
+    margin-top:-327px;
+}
+#nav3{
+    display: inline-block;
+}
+#nav4{
+    display:inline-block;
+}
+#button3{
+    display: inline-block;
+}
+#button4{
+    display:inline-block;
+}*/
