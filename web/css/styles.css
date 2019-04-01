@@ -1,0 +1,131 @@
+.selectStore{
+    display:inline-block;
+    margin-top:5px;
+}
+.userArea{
+    display:inline-block;
+    margin-right:20px;
+    float:right;
+}
+.loginRegistration{
+    display:inline-block;
+    list-style-type: none;
+}
+.createAccount{
+    display:inline-block;
+}
+.login{
+    display:inline-block;
+    margin-left:5px;
+}
+.userCart{
+    display:inline-block;
+}
+.menu{
+    display:block;
+}
+.menuDisplay{
+    display:block;
+}
+.menuList{
+    display:inline-block;
+}
+.TitlePage{
+    display: inline-block;
+    font-size:50px;
+    margin-left:250px;
+    margin-right:50px;
+}
+.MenuListItem{
+    display:inline-block;
+    margin-left:10px;
+    margin-right:10px;
+}
+.searchItem{
+    display: -webkit-box;
+}
+.firstFooter{
+    display:block;
+}
+.linksArea{
+    display:block;
+}
+.customerSupport{
+    display:inline-block;
+    margin-top:50px;
+    margin-left:50px;
+}
+.customer_Service_Area{
+    display:inline-block;
+}
+.customer_Service_Area_List{
+    display:inline-block;
+    list-style-type: none;
+    text-align: center;
+}
+.connectArea{
+    display:inline-block;
+    margin-left:230px;
+    margin-top:50px;
+}
+.connectLinks{
+    display:inline-block;
+}
+.connect_Links_Area{
+    display:inline-block;
+}
+.connnect_Links_Area_List{
+    display:inline-block;
+    list-style-type: none;
+    text-align: center;
+}
+.socialLinks{
+    float: right;
+    margin-left: 350px;
+    margin-top: 50px;
+    display:inline-block
+}
+.social_Links_Area{
+    display:inline-block;
+}
+.social_Links_Area_List{
+    list-style-type: none'
+}
+#twitter{
+    margin-left:5px;
+}
+#pintrest{
+    margin-left:5px;
+}
+#insta{
+    margin-left:5px;
+}
+#youtube{
+    margin-left:5px;
+}
+.secondFooter{
+    background:#FFFFFF;
+}
+.legalArea{
+    display:inline-block;
+    margin-left:600px;
+}
+.privacyCondition{
+    display:inline-block;
+    margiin-right:40px;
+}
+.privacy_Links{
+    display:inline-block;
+}
+.privacy_Links_Area{
+    display:inline-block;
+    list-style-type: none;
+}
+.privacy_Links_Area li{
+    display:inline-block;
+    margin-right:10px;
+}
+.copyrightArea{
+    display:inline-block;
+    margin-left:30px;
+}
