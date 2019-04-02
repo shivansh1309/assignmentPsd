@@ -6,67 +6,41 @@
         <move element="register-link" destination="createAccount" />
         <move element="authorization-link" destination="login" />
         <move element="minicart" destination="userCart" />
-        <move element="top.search" destination="searchItem" />
-        <move element="currency" destination="currencyArea" />
-        <referenceContainer name="copyright" remove="true" />
+        <move element="logo" destination="displayTitle" />
+
         <referenceContainer name="header.panel" remove="true" />
-        <referenceBlock name = "logo" remove = "true" />
-        <referenceBlock name = "cms_page" remove = "true" />
-        <referenceBlock name="footer_links" remove="true" />
-        <referenceBlock name="form.subscribe" remove="true" />
+
         <referenceContainer name="header.container">
             <container name = "firstHeader" label = "firstHeader" htmlTag="div" htmlClass = "firstHeader" before ="-">
                 <container name="selectStore"  label="selectStore" htmlTag="div" htmlClass="selectStore" />
                 <container name="userArea" label="userArea" htmlTag="div" htmlClass = "userArea">
                     <container name="loginRegistration" label="loginRegistration" htmlTag="div" htmlClass="loginRegistration">
-                        <container name="createAccount" label="createAccount" htmlTag="div" htmlClass="createAccount" />
-                        <container name="login" label="login" htmlTag="div" htmlClass="login" />
+                        <container name="createAccount" label="createAccount" htmlTag="div" htmlClass="createAccount">
+                            <referenceBlock name="register-link">
+                                <arguments>
+                                <argument name="label" xsi:type="string" translate="true">Register /</argument></arguments>
+                            </referenceBlock>
+                        </container>
+                        <container name="login" label="login" htmlTag="div" htmlClass="login">
+                            <referenceBlock name="authorization-link">
+                                <arguments>
+                                <argument name="label" xsi:type="string" translate="true">SIGN IN</argument></arguments>
+                            </referenceBlock>
+                        </container>
                     </container>
                     <container name="userCart" label="userCart" htmlTag="div" htmlClass="userCart" />
                 </container>
             </container>
+
             <container name="secondHeader" label="secondHeader" htmlTag="div" htmlClass="secondHeader" after="firstHeader">
+                <container name="title" label="title" htmlTag="div" htmlClass="title">
+                   <container name="displayTitle" label="displayTitle" htmlTag="div" htmlClass="displayTitle" />
+                </container>
                 <container name="menu" label="menu" htmlTag="div" htmlClass="menu">
                     <block class="Magento\Framework\View\Element\Template" name="display_Menu" template="Magento_Theme::display_Menu.phtml" />
-                    <container name="searchItem" label="searchItem" htmlTag="div" htmlClass="searchItem"/>
                 </container>
-            </container>
-            <container name="bannerDisplay" label="bannerDisplay" htmlTag="div" htmlClass="bannerDisplay">
-                <block class="Magento\Framework\View\Element\Template" name="banner_Display" template="Magento_Theme::banner_Display.phtml" />
-            </container>
-        </referenceContainer>
-
-<!--
-**************************************************FOOTER**********************************************************************************
--->
-
-        <referenceContainer name="footer-container">
-            <container name="firstFooter" label="firstFooter" htmlTag="div" htmlClass="firstFooter">
-                <container name="linksArea" label="linksArea" htmlTag="div" htmlClass="linksArea">
-                    <container name="customerSupport" label="customerSupport" htmlTag="div" htmlClass="customerSupport">
-                        <block class="Magento\Framework\View\Element\Template" name="customer_Support" template="Magento_Theme::customer_Support.phtml" />
-                    </container>
-                    <container name="connectArea" label="connectArea" htmlTag="div" htmlClass="connectArea">
-                        <container name="connectLinks" label="connectLinks" htmlTag="div" htmlClass="connectLinks">
-                            <block class="Magento\Framework\View\Element\Template" name="connect_Links" template="Magento_Theme::connect_Links.phtml" />
-                        </container>
-                        <container name="socialLinks" label="socialLinks" htmlTag="div" htmlClass="socialLinks">
-                            <block class="Magento\Framework\View\Element\Template" name="social_Links" template="Magento_Theme::social_Links.phtml" />
-                        </container>
-                    </container>
-                </container>
-            </container>
-            <container name="secondFooter" label="secondFooter" htmlTag="div" htmlClass="secondFooter" after="firstFooter">
-                <container name="currencyArea" label="currencyArea" htmlTag="div" htmlClass="currencyArea">
-                    <block class="Magento\Framework\View\Element\Template" >
-                </container>
-                <container name="legalArea" label="legalArea" htmlTag="div" htmlClass="legalArea">
-                    <container name="privacyCondition" label="privacyCondition" htmlTag="div" htmlClass="privacyCondition">
-                        <block class="Magento\Framework\View\Element\Template" name="privacy_Condition" template="Magento_Theme::privacy_Condition.phtml" />
-                    </container>
-                    <container name="copyrightArea" label="copyrightArea" htmlTag="div" htmlClass="copyrightArea">
-                        <block class="Magento\Framework\View\Element\Template" name="copyright_Area" template="Magento_Theme::copyright_Area.phtml" />
-                    </container>
+                <container name="searchLabel" label="searchLabel" htmlTag="div" htmlClass="searchLabel">
+                    <block class="Magento\Framework\View\Element\Template" name="search_Label" template="Magento_Theme::display_Menu.phtml" />
                 </container>
             </container>
         </referenceContainer>

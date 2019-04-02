@@ -1,15 +1,21 @@
+
 .selectStore{
-    display:inline-block;
-    margin-top:5px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 50px;
 }
+
 .userArea{
-    display:inline-block;
-    margin-right:20px;
-    float:right;
+    display: inline-block;
+    margin-right: 60px;
+    float: right;
+    margin-top: 10px;
 }
+
 .loginRegistration{
     display:inline-block;
     list-style-type: none;
+    margin-right:30px;
 }
 .createAccount{
     display:inline-block;
@@ -19,30 +25,85 @@
     margin-left:5px;
 }
 .userCart{
+    display:inline;
+}
+.title{
     display:inline-block;
+}
+.menu{
+    display:inline-block;
+    float:right;
+}
+.searchLabel{
+    display:block;
+}
+.displayTitle{
+    display: block;
+    margin-left: 370px;
+    margin-top: 45px;
 }
 .menu{
     display:block;
 }
-.menuDisplay{
-    display:block;
+.MenuList{
+    display:inline;
+    list-style-type: none;
 }
-.menuList{
-    display:inline-block;
+.MenuListItem{
+    display:inline;
+    margin-left:10px;
+    margin-right:20px;
+    font-family: 'Oswald', sans-serif;
+}
+.MenuDisplay{
+    display:block;
+    margin-right: 70px;
+    margin-top: 40px;
+}
+.searchArea{
+    margin-left: 365px;
+    margin-top: 20px;
+    margin-right:315px;
+    display:flex;
+    border-color: #000000;
+    border-style: solid;
+    border-width:1px;
+}
+.topSearch{
+    border:none;
+}
+#topButton{
+    border-width: 3px;
+    border-color: #000000;
+    background-color: white;
+    margin-left: 0px;
+}
+/*.TitlePage{
+    position:relative;
+}
+.MenuList{
+    display:inline;
 }
 .TitlePage{
     display: inline-block;
     font-size:50px;
-    margin-left:250px;
+    margin-left:340px;
     margin-right:50px;
 }
 .MenuListItem{
-    display:inline-block;
+    display:inline;
     margin-left:10px;
     margin-right:10px;
 }
-.searchItem{
-    display: -webkit-box;
+#searchBar{
+    visibility: hidden;
+    margin-top: 30px;
+    height: 30px;
+    width: 700px;
+    margin-left: 279px;
+}
+#search:hover #searchBar{
+    visibility: visible;
 }
 .firstFooter{
     display:block;
@@ -128,4 +189,4 @@
 .copyrightArea{
     display:inline-block;
     margin-left:30px;
-}
+}*/
