@@ -6,10 +6,13 @@
         <move element="register-link" destination="createAccount" />
         <move element="authorization-link" destination="login" />
         <move element="minicart" destination="userCart" />
-        <move element="logo" destination="displayTitle" />
 
         <referenceContainer name="header.panel" remove="true" />
-
+        <referenceBlock name="logo" remove="true" />
+        <referenceBlock name="top.search" remove="true" />
+        <referenceBlock name="page.main.title" remove="true" />
+        <referenceBlock name="footer_links" remove="true" />
+        <referenceBlock name="form.subscribe" remove="true" />
         <referenceContainer name="header.container">
             <container name = "firstHeader" label = "firstHeader" htmlTag="div" htmlClass = "firstHeader" before ="-">
                 <container name="selectStore"  label="selectStore" htmlTag="div" htmlClass="selectStore" />
@@ -31,16 +34,53 @@
                     <container name="userCart" label="userCart" htmlTag="div" htmlClass="userCart" />
                 </container>
             </container>
-
             <container name="secondHeader" label="secondHeader" htmlTag="div" htmlClass="secondHeader" after="firstHeader">
                 <container name="title" label="title" htmlTag="div" htmlClass="title">
-                   <container name="displayTitle" label="displayTitle" htmlTag="div" htmlClass="displayTitle" />
+                   <container name="displayTitle" label="displayTitle" htmlTag="div" htmlClass="displayTitle">
+                        <block class="Magento\Framework\View\Element\Template" name="display_Title" template="Magento_Theme::display_Title.phtml" />
+                    </container>
                 </container>
                 <container name="menu" label="menu" htmlTag="div" htmlClass="menu">
                     <block class="Magento\Framework\View\Element\Template" name="display_Menu" template="Magento_Theme::display_Menu.phtml" />
                 </container>
                 <container name="searchLabel" label="searchLabel" htmlTag="div" htmlClass="searchLabel">
-                    <block class="Magento\Framework\View\Element\Template" name="search_Label" template="Magento_Theme::display_Menu.phtml" />
+                    <block class="Magento\Framework\View\Element\Template" name="search_Label" template="Magento_Theme::search_Label.phtml" />
+                </container>
+                <container name="banner" label="banner" htmlTag="div" htmlClass="banner">
+                <container name="sliderDisplay" label="sliderDisplay" htmlTag="div" htmlClass="sliderDisplay">
+                    <block class="Magento\Framework\View\Element\Template" name="slider_Display" template="Magento_Theme::slider_Display.phtml" />
+                </container>
+            </container>
+            </container>
+        </referenceContainer>
+
+        <referenceContainer name="footer-container">
+            <container name="firstFooter" label="firstFooter" htmlTag="div" htmlClass="firstFooter">
+                <container name="linksArea" label="linksArea" htmlTag="div" htmlClass="linksArea">
+                    <container name="customerSupport" label="customerSupport" htmlTag="div" htmlClass="customerSupport">
+                        <block class="Magento\Framework\View\Element\Template" name="customer_Support" template="Magento_Theme::customer_Support.phtml" />
+                    </container>
+                    <container name="connectArea" label="connectArea" htmlTag="div" htmlClass="connectArea">
+                        <container name="connectLinks" label="connectLinks" htmlTag="div" htmlClass="connectLinks">
+                            <block class="Magento\Framework\View\Element\Template" name="connect_Links" template="Magento_Theme::connect_Links.phtml" />
+                        </container>
+                        <container name="socialLinks" label="socialLinks" htmlTag="div" htmlClass="socialLinks">
+                            <block class="Magento\Framework\View\Element\Template" name="social_Links" template="Magento_Theme::social_Links.phtml" />
+                        </container>
+                    </container>
+                </container>
+            </container>
+            <container name="secondFooter" label="secondFooter" htmlTag="div" htmlClass="secondFooter" after="firstFooter">
+                <container name="currencyArea" label="currencyArea" htmlTag="div" htmlClass="currencyArea">
+                    <block class="Magento\Framework\View\Element\Template" />
+                </container>
+                <container name="legalArea" label="legalArea" htmlTag="div" htmlClass="legalArea">
+                    <container name="privacyCondition" label="privacyCondition" htmlTag="div" htmlClass="privacyCondition">
+                        <block class="Magento\Framework\View\Element\Template" name="privacy_Condition" template="Magento_Theme::privacy_Condition.phtml" />
+                    </container>
+                    <container name="copyrightArea" label="copyrightArea" htmlTag="div" htmlClass="copyrightArea">
+                        <block class="Magento\Framework\View\Element\Template" name="copyright_Area" template="Magento_Theme::copyright_Area.phtml" />
+                    </container>
                 </container>
             </container>
         </referenceContainer>

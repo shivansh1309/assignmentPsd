@@ -2,7 +2,9 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head> 
         <css src="css/styles.css" />
+        <css src="css/owl.carousel.css" />
+        <css src="css/owl.default.theme.css" />
+        <link src="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" />
         <link src="js/jquery.js" />
-        <link src="js/searchBar.js" />
     </head>
 </page>
