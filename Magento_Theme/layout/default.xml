@@ -47,12 +47,12 @@
                     <block class="Magento\Framework\View\Element\Template" name="search_Label" template="Magento_Theme::search_Label.phtml" />
                 </container>
                 <container name="banner" label="banner" htmlTag="div" htmlClass="banner">
-                <container name="sliderDisplay" label="sliderDisplay" htmlTag="div" htmlClass="sliderDisplay">
-                    <block class="Magento\Framework\View\Element\Template" name="slider_Display" template="Magento_Theme::slider_Display.phtml" />
+                    <container name="sliderDisplay" label="sliderDisplay" htmlTag="div" htmlClass="sliderDisplay">
+                        <block class="Magento\Framework\View\Element\Template" name="slider_Display" template="Magento_Theme::slider_Display.phtml" />
+                    </container>
                 </container>
             </container>
-            </container>
-        </referenceContainer>
+    </referenceContainer>
 
         <referenceContainer name="footer-container">
             <container name="firstFooter" label="firstFooter" htmlTag="div" htmlClass="firstFooter">
